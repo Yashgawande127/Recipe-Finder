@@ -93,20 +93,24 @@ const Home = () => {
             From quick weeknight dinners to elaborate weekend feasts.
           </p>
           <div className="flex justify-center space-x-4">
-            <CookingButton
-              onClick={() => window.location.href = '/create-recipe'}
-              variant="primary"
-              className="bg-white text-primary-600 hover:bg-primary-50"
-            >
-              Share Your Recipe
-            </CookingButton>
-            <MenuButton
-              onClick={() => window.location.href = '/seasonal-collections'}
-              foodIcon="🍂"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary-600"
-            >
-              Seasonal Collections
-            </MenuButton>
+            <Link to="/create-recipe">
+              <CookingButton
+                variant="primary"
+                className="bg-white text-primary-600 hover:bg-primary-50"
+                preventDefaultBehavior={false}
+              >
+                Share Your Recipe
+              </CookingButton>
+            </Link>
+            <Link to="/seasonal-collections">
+              <MenuButton
+                foodIcon="🍂"
+                className="border-2 border-white text-white hover:bg-white hover:text-primary-600"
+                preventDefaultBehavior={false}
+              >
+                Seasonal Collections
+              </MenuButton>
+            </Link>
           </div>
         </div>
 
