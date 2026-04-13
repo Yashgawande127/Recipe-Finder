@@ -1,0 +1,10 @@
+{
+  "short_name": "FlameFlavors",
+  "name": "FlameFlavors Recipe Finder",
+  "description": "Discover delicious recipes from around the world",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#f97316",
+  "background_color": "#ffffff",
+  "orientation": "portrait"
+}
